@@ -22,5 +22,17 @@ public class Main {
         System.out.println("O maior número é: " + numeros.encontrarMaiorNumero());
         System.out.println("O menor número é: " + numeros.encontrarMenorNumero());
         System.out.println("A soma é: " + numeros.calcularSoma());*/
+
+        //Ordenação de List
+        OrdenacaoNumeros numeros = new OrdenacaoNumeros();
+
+        numeros.adicionarNumero(10);
+        numeros.adicionarNumero(-1);
+        numeros.adicionarNumero(0);
+        numeros.adicionarNumero(3);
+
+        numeros.ordenarAscendente();
+        numeros.ordenarDescendente();
+
     }
 }
