@@ -34,6 +34,16 @@ public class Main {
         lista.limparListaTarefa();
         lista.exibirTarefas(); */
 
+        //Ordenação
+        GerenciarAlunos gerenciarAlunos = new GerenciarAlunos();
+        gerenciarAlunos.adicionarAluno("Pedro", 12534L, 5.3);
+        gerenciarAlunos.adicionarAluno("Camila", 12535L, 0);
+        gerenciarAlunos.adicionarAluno("Ana", 12536L, 8.7);
 
+        gerenciarAlunos.exibirAlunoPorNota();
+        gerenciarAlunos.exibirAlunosPorNome();
+
+        gerenciarAlunos.removerAluno(12534L);
+        gerenciarAlunos.exibirAlunosPorNome();
     }
 }
